@@ -1,0 +1,6 @@
+/dataset.csv
+.venv/
+.ipynb_checkpoints
+__pycache__/
+checkpoint
+ckpt-2*

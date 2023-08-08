@@ -1,0 +1,14 @@
+stages:
+  cleaning:
+    cmd: python data_cleaning.py
+    deps:
+      - data_cleaning.py
+    outs:
+      - dataset.csv
+  training:
+    cmd: python train.py dataset.csv
+    deps:
+      - dataset.csv
+      - train.py
+      - training_class.py
+     
